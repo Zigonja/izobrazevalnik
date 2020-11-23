@@ -2,7 +2,7 @@
 **Projektna naloga pri predmetu grafično oblikovanje**
 **Skupina:** Erik Peternel, Erik Pahor, Žiga Klemenčič, Matej Marolt
 ## Porocilo
-Poročilo lahko prenesete [tukaj](https://github.com/Zigonja/izobrazevalnik/blob/main/porocilo_v3.zip)
+Poročilo lahko prenesete [tukaj](https://github.com/Zigonja/izobrazevalnik/blob/main/porocilo_v3.pdf)
 ## Izhodišče
 Za podlogo smo uporabili [Black dashboard by Creative Tim](https://www.creative-tim.com/product/black-dashboard), ki pa smo jo močno preuredili za svoje potrebe.
 ## Navodila
