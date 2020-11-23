@@ -82,6 +82,10 @@ class Fizika extends React.Component {
               
             </p>
 
+            <p style={{fontSize: 24}}>
+              Prostor za druge materijale, razlage, skice in podobno.
+            </p>
+
             <h1 style={{color: '#27293d', marginTop: 30, marginBottom: 30}}>Video predstavitev snovi z nalogami</h1>
             <iframe style={{width: '100%', marginBottom: 30,borderRadius: '5px'}} width="560" height="465" src="https://www.youtube.com/embed/tbDStYJ9CqU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </ModalBody>
