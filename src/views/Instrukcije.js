@@ -54,6 +54,7 @@ import {
   chartExample3,
   chartExample4
 } from "variables/charts.js";
+import { NavLink } from "react-router-dom";
 
 
 class Instrukcije extends React.Component {
@@ -140,31 +141,7 @@ class Instrukcije extends React.Component {
                 </CardHeader>
                 <CardBody>
                   <Row className="instruktorji">
-                    <Col xs="4" style={{textAlign: 'center'}}>
-                      <div className="insturktor-div">
-                        <div style={{padding: 0}}>
-                          <img src={Face1}></img>
-                        </div>
-                        <div>
-                          <h4>Inštruktor Matej</h4>
-                        </div>
-                        <hr />
-                        <div>
-                          <strong>52</strong> opravljenih inštrukcij
-                        </div>
-                        <div>
-                          Povprečna ocena <strong>4.7</strong>
-                        </div>
-                        <div>
-                          Možnost inštruiranja na daljavo
-                        </div>
-                        <hr />
-                        <div>
-                          <a className="btn btn-primary w-100 mt-15" href="#">Kontakt</a>
-                        </div>
-                      </div>
-                    </Col>
-                    <Col xs="4" style={{textAlign: 'center'}}>
+                  <Col xs="4" style={{textAlign: 'center'}}>
                     <div className="insturktor-div">
 
                       <div style={{padding: 0}}>
@@ -183,13 +160,16 @@ class Instrukcije extends React.Component {
                       <div>
                         Možnost inštruiranja na daljavo
                       </div>
+                      <div>
+                      <strong style={{color: "#007bff"}}>Aktiven zdaj</strong>
+                      </div>
                       <hr />
                       <div>
-                        <a className="btn btn-primary w-100 mt-15" href="#">Kontakt</a>
+                        <NavLink className="btn btn-primary w-100 mt-15" to="/admin/konferenca">Prični konferenco</NavLink>
                       </div>
                       </div>
                     </Col>
-                    <Col xs="4" style={{textAlign: 'center'}}>
+                  <Col xs="4" style={{textAlign: 'center'}}>
                     <div className="insturktor-div">
 
                       <div style={{padding: 0}}>
@@ -208,12 +188,45 @@ class Instrukcije extends React.Component {
                       <div>
                         Pride na dom
                       </div>
+                      <div>
+                      <strong style={{color: "#777777"}}>Trenutno neaktivna</strong>
+                      </div>
                       <hr />
                       <div>
-                        <a className="btn btn-primary w-100 mt-15" href="#">Kontakt</a>
+                      <a className="btn btn-primary w-100 mt-15" href="#">Kontakt</a>
                       </div>
                       </div>
                     </Col>
+                    <Col xs="4" style={{textAlign: 'center'}}>
+                      <div className="insturktor-div">
+                        <div style={{padding: 0}}>
+                          <img src={Face1}></img>
+                        </div>
+                        <div>
+                          <h4>Inštruktor Matej</h4>
+                        </div>
+                        <hr />
+                        <div>
+                          <strong>52</strong> opravljenih inštrukcij
+                        </div>
+                        <div>
+                          Povprečna ocena <strong>4.7</strong>
+                        </div>
+                        <div>
+                          Možnost inštruiranja na daljavo
+                        </div>
+                        <div>
+                          <strong style={{color: "#777777"}}>Trenutno neaktiven</strong>
+                        </div>
+                        <hr />
+                        <div>
+                          <a className="btn btn-primary w-100 mt-15" href="#">Kontakt</a>
+                        </div>
+                     
+                      </div>
+                    </Col>
+                    
+                   
                   </Row>
                 </CardBody>
 

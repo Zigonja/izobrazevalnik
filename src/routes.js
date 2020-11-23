@@ -4,6 +4,7 @@ import GimnazijaPrvi from "views/Gimnazija.js";
 import Pomoc  from "views/Pomoc.js";
 import Profil from "views/Profil.js";
 import Fizika from "views/Fizika.js";
+import Konferenca from "views/Konferenca";
 
 var routes = [
   {
@@ -47,6 +48,14 @@ var routes = [
     name: "Gimnazija (1. Letnik) Fizika",
     icon: "tim-icons icon-chat-33",
     component: Fizika,
+    layout: "/admin",
+    hidden: true
+  },
+  {
+    path: "/konferenca",
+    name: "Konferenca",
+    icon: "tim-icons icon-chat-33",
+    component: Konferenca,
     layout: "/admin",
     hidden: true
   }
