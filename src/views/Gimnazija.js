@@ -1,22 +1,5 @@
-/*!
-
-=========================================================
-* Black Dashboard React v1.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/black-dashboard-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/black-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
-// react plugin for creating notifications over the dashboard
+
 import NotificationAlert from "react-notification-alert";
 import Slo from "assets/img/predmeti/slo.png";
 import Mat from "assets/img/predmeti/mat.png";
@@ -32,9 +15,8 @@ import Fiz from "assets/img/predmeti/fiz.png";
 import Phi from "assets/img/predmeti/phi.png";
 import Inf from "assets/img/predmeti/inf.png";
 import Izb from "assets/img/predmeti/izb.png";
+import { NavLink, Link } from "react-router-dom";
 
-
-// reactstrap components
 import {
   Alert,
   UncontrolledAlert,
@@ -49,7 +31,7 @@ import {
   Col
 } from "reactstrap";
 
-class Notifications extends React.Component { 
+class Gimnazija extends React.Component { 
   notify = place => {
     var color = Math.floor(Math.random() * 5 + 1);
     var type;
@@ -78,8 +60,7 @@ class Notifications extends React.Component {
       message: (
         <div>
           <div>
-            Welcome to <b>Black Dashboard React</b> - a beautiful freebie for
-            every web developer.
+            
           </div>
         </div>
       ),
@@ -96,7 +77,7 @@ class Notifications extends React.Component {
           <div className="react-notification-alert-container">
             <NotificationAlert ref="notificationAlert" />
           </div>
-          <a style={{cursor: 'default'}} href="/admin/fizika">
+          <NavLink style={{cursor: 'default'}} to="/admin/fizika">
 
           <Row>
             <Col md="3">
@@ -237,11 +218,11 @@ class Notifications extends React.Component {
               </Card>
             </Col>
           </Row>
-          </a>
+          </NavLink>
         </div>
       </>
     );
   }
 }
 
-export default Notifications;
+export default Gimnazija;

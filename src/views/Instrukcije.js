@@ -56,7 +56,7 @@ import {
 } from "variables/charts.js";
 
 
-class Dashboard extends React.Component {
+class Instrukcije extends React.Component {
   state = {
     open: false
   };
@@ -226,4 +226,4 @@ class Dashboard extends React.Component {
   }
 }
 
-export default Dashboard;
+export default Instrukcije;

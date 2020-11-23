@@ -91,7 +91,7 @@ class Fizika extends React.Component {
         <Row>
             <Col md="12">
               <Card>
-                <CardBody className="">
+                <CardBody onClick={this.setModalOpen} className="">
                     <Row >
                       <Col xs={12}><h3>Merjenje</h3></Col>
                       <Col xs={3}><button class="btn btn-secondary btn-lg w-100">Potence</button></Col>
@@ -113,7 +113,7 @@ class Fizika extends React.Component {
                       <Col xs={3}><button class="btn btn-secondary btn-lg w-100">Sila</button></Col>
                       <Col xs={3}><button class="btn btn-secondary btn-lg w-100">Newtonovi zakoni</button></Col>
                       <Col xs={3}><button class="btn btn-secondary btn-lg w-100">Hookov zakon</button></Col>
-                      <Col xs={3}><button onClick={this.setModalOpen} class="btn btn-secondary btn-lg w-100">Sile v ravnovesju</button></Col>
+                      <Col xs={3}><button class="btn btn-secondary btn-lg w-100">Sile v ravnovesju</button></Col>
                       <Col xs={3}><button class="btn btn-secondary btn-lg w-100">II. Newtonov zakon</button></Col>
                       <Col xs={3}><button class="btn btn-secondary btn-lg w-100">Ravnovesje</button></Col>
                       <Col xs={3}><button class="btn btn-secondary btn-lg w-100">Težišče</button></Col>

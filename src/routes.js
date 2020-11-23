@@ -1,73 +1,45 @@
-/*!
-
-=========================================================
-* Black Dashboard React v1.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/black-dashboard-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/black-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-import Dashboard from "views/Dashboard.js";
-import Icons from "views/Icons.js";
-import Map from "views/Map.js";
-import Notifications from "views/Notifications.js";
-import TableList from "views/TableList.js";
-import Typography from "views/Typography.js";
-import UserProfile from "views/UserProfile.js";
+import Instrukcije from "views/Instrukcije.js";
+import Snov from "views/Snov.js";
+import GimnazijaPrvi from "views/Gimnazija.js";
+import Pomoc  from "views/Pomoc.js";
+import Profil from "views/Profil.js";
 import Fizika from "views/Fizika.js";
 
 var routes = [
   {
-    path: "/dashboard",
+    path: "/profil",
     name: "Profil",
     icon: "tim-icons icon-badge",
-    component: UserProfile,
+    component: Profil,
     layout: "/admin"
-  },
-  {
-    path: "/icons",
-    name: "Gimnazija (1. Letnik)",
-    icon: "tim-icons icon-puzzle-10",
-    component: Notifications,
-    layout: "/admin",
-    hidden: true
-
   },
   {
     path: "/snov",
     name: "Snov",
     icon: "tim-icons icon-notes",
-    component: Map,
+    component: Snov,
     layout: "/admin"
   },
   {
-    path: "/predmeti",
+    path: "/gim-prvi-letnik",
     name: "Gimnazija (1. Letnik)",
     icon: "tim-icons icon-bank",
-    component: Notifications,
+    component: GimnazijaPrvi,
     layout: "/admin",
     hidden: true
   },
   {
-    path: "/tables",
+    path: "/pomoc",
     name: "Poišči pomoč",
     icon: "tim-icons icon-zoom-split",
-    component: TableList,
+    component: Pomoc,
     layout: "/admin"
   },
   {
-    path: "/user-profile",
+    path: "/instrukcije",
     name: "Inštrukcije",
     icon: "tim-icons icon-chat-33",
-    component: Dashboard,
+    component: Instrukcije,
     layout: "/admin"
   },
   {
