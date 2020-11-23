@@ -1,5 +1,5 @@
 {
-  "name": "black-dashboard-react",
+  "name": "izovrazevalnik",
   "version": "1.1.0",
   "private": true,
   "homepage": "izobrazevalnik",
@@ -7,6 +7,7 @@
     "@types/react": "16.9.23",
     "chart.js": "2.9.3",
     "classnames": "2.2.6",
+    "dotenv-cli": "^4.0.0",
     "equation-editor-react": "^0.0.6",
     "google-translate-open-api": "^1.3.6",
     "history": "4.10.1",
